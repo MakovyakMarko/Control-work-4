@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>HTML Input Attributes</title>
+</head>
+
+<body>
+    <h1>HTML Input Attributes</h1>
+    <hr />
+    <form action="">
+        <fieldset>
+            <legend>HTML Input Attributes</legend>
+            <ol type="1" start="1">
+                <li>value</li>
+                <li>readonly</li>
+                <li>disabled</li>
+                <li>size</li>
+                <li>maxlength</li>
+                <li>min & max</li>
+                <li>multiple</li>
+                <li>pattern</li>
+                <li>placeholder</li>
+                <li>required</li>
+                <li>step</li>
+                <li>autofocus</li>
+                <li>height & width</li>
+                <li>list</li>
+                <li>autocomplete</li>
+            </ol>
+            <hr />
+
+            <p>Value</p>
+            <input type="range" value="75">
+            <hr />
+
+            <p>Readonly</p>
+            <input type="text" value="Marco" readonly>
+            <hr />
+
+            <p>Disabled</p>
+            <input type="range" value="25" disabled>
+            <hr />
+
+            <p>Size</p>
+            <input type="text" name="size" placeholder="pin-code" size="4">
+            <input type="submit" value="Submit">
+            <hr />
+
+            <p>Maxlength</p>
+            <input type="text" name="size" placeholder="pin-code" size="4" maxlength="4">
+            <input type="submit" value="Submit">
+            <hr />
+
+            <p>Min & Max</p>
+            <input type="number" min="0" max="50" value="25" step="5">
+            <hr/>
+
+            <p>Multyple</p>
+            <input type="file" name="file" id="file" multiple>
+            <hr/>
+            
+            <p>Pattern</p>
+            &lt;input type="tel" name="tel" pattern="[0-9]1-[0-9]1-[0-9]3-[0-9]3-[0-9]2-[0-9]2"&gt;
+            <input type="tel" name="tel" pattern="[0-9]1-[0-9]1-[0-9]3-[0-9]3-[0-9]2-[0-9]2">
+            <hr/>
+
+            <p>Placeholder</p>
+            <input type="text" name="text" placeholder="placeholder">
+            <hr/>
+
+            <p>Required</p>
+            <input type="text" id="username" name="username" placeholder="enter username" required>
+            <hr/>
+
+            <p>Step</p>
+            <input type="range" id="range" name="range" step="25">
+            <hr/>
+
+            <p>Autofocus</p>
+            <input type="text" id="autofocus" name="autofocus" autofocus>
+            <hr/>
+
+            <p>Height & width</p>
+            <input type="image" name="image" height="100" width="200" alt="it must be image">
+            <hr/>
+
+            <p>List</p>
+            <input list="cars">
+            <datalist id="cars">
+                <option>Car1</option>
+                <option>Car2</option>
+            </datalist>
+            <hr/>
+
+            <p>Autocomlite</p>
+            <input type="email" id="email" name="email" autocomlite="on">
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

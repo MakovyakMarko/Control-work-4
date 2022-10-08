@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    color: white;
+    background-color: blue;
+}
+nav{
+    text-align: center;
+    margin: 10px;
+}
+a:link{
+    text-align: center;
+    color:white;
+    background-color: blue;
+    padding:5px;
+    margin:0px;
+}
+a:visited{
+    text-align: center;
+    color:yellow;
+}
+a:hover{
+    text-align: center;
+    color:black;
+}

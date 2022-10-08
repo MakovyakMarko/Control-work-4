@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input form* Attributes</title>
+  </head>
+  <body>
+    <h1>Input form* Attributes</h1>
+    <hr />
+
+    <form>
+      <fieldset>
+        <legend>Input form* Attributes</legend>
+        <ol>
+          <li>form</li>
+          <li>formaction</li>
+          <li>formenctype</li>
+          <li>formmethod</li>
+          <li>formtarget</li>
+          <li>formnovalidate</li>
+          <li>novalidate</li>
+        </ol>
+        <hr />
+
+        <p>Form</p>
+        <form action="/action_page.php" id="form1">
+          <input type="submit" value="Submit" />
+        </form>
+        <input type="text" name="textf" id="text" form="form1" required />'
+        <hr />
+
+        <p>Formaction</p>
+        <form action="action_page.php">
+          <input type="text" name="textfa" formaction="action_page2.php" />
+        </form>
+        <hr />
+
+        <p>Formenctype</p>
+        <form action="a_page.php">
+          <input type="text" name="textfenct" />
+          <input
+            type="submit"
+            formenctype="multipart/form-data"
+            value="submit as multipart/form-data"
+          />
+        </form>
+        <hr />
+
+        <p>Formmethod</p>
+        <form action="action_page.php" method="get">
+          <input type="text" name="textfm" />
+          <input type="submit" value="Submit using GET" />
+          <input type="submit" formmethod="post" value="Submit using POST" />
+        </form>
+        <hr />
+
+        <p>Formtarget</p>
+        <form action="action_page.php">
+          <input type="text" name="textft" />
+          <input
+            type="submit"
+            formtarget="_blank"
+            value="Submit to a new window/tab"
+          />
+        </form>
+        <hr />
+
+        <p>Formnovalidate</p>
+        <form action="action_page.php">
+          <input type="text" name="textfnv" />
+          <input
+            type="submit"
+            formnovalidate
+            value="Submit without validation"
+          />
+        </form>
+        <hr />
+
+        <p>Novalidate</p>
+        <form action="action_page.php" novalidate>
+          <input
+            type="text"
+            name="textnv"
+            placeholder="Form without validation"
+          />
+          <input type="submit" value="submit" />
+        </form>
+      </fieldset>
+    </form>
+  </body>
+</html>
